@@ -1,4 +1,4 @@
-# LSM6DS33 + LIS3MDL Librariers
+# LSM6DS33 + LIS3MDL Libraries v0.1.0 ALPHA
 
 These files are used together to communicate with the two chipsets via the I2C interface. 
 The libraries are written for the STM32L4xx, to use it on an F series of any other STM32 platform, change the includes for the HALs.
@@ -8,6 +8,10 @@ The libraries are written for the STM32L4xx, to use it on an F series of any oth
 The files were tested using the STM32CubeIDE, as such any attempts to use the files on another platform should be done at your own discression. 
 The code has only been tested on a STM32L433cbt6 chipset using the J-link interface to both program and debug.
 A UART was included in the main.c file to allow printing out onto a terminal.
+
+This project is unfinished! The algorithm and libraries work but styling is a mess. This will be fixed in future revisions.
+The libraries follow a 'DIY' approach to configuring the various registers in an intuitive way. Most libraries simply give a few default settings and then if the user wants to get more control over their device, they should make their own library or read the datasheet.
+This library aims to make it easier to understand what knobs you're turning when you shift bits into different registers (let me know if this sort of approach is helpful or not).
 
 ## Versioning
 
